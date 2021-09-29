@@ -11,18 +11,19 @@
     padding: 0px 20px;
 
 }
-.Header-greeting:hover{
+/* .Header-greeting:hover{
     text-shadow: 2px 2px rgb(226, 131, 131);
-}
+} */
 nav{
     padding-bottom: 10px;
 }
 nav a{
     text-decoration: none;
     display: inline-block;
-    margin-right: 10px;
+    margin: 0px 10px;
     row-gap: 40px;
     color: white;
+    font-weight: 600;
 }
 nav a:hover{
     color:aqua;
