@@ -1,0 +1,30 @@
+.Header-container{
+    width: 80%;
+    height: 100px;
+    margin: 0px auto;
+    background: rgba(14, 4, 31, 0.74);
+    color: white;
+    box-shadow: 2px 2px 3px rgb(172, 106, 106);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+
+}
+.Header-greeting:hover{
+    text-shadow: 2px 2px rgb(226, 131, 131);
+}
+nav{
+    padding-bottom: 10px;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    row-gap: 40px;
+    color: white;
+}
+nav a:hover{
+    color:aqua;
+    text-shadow: 1px 1px rgb(226, 131, 131);
+}
