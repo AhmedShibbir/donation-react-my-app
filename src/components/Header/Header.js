@@ -15,6 +15,9 @@ const Header = () => {
                     <a href="/Contact">Contact</a>
                 </nav>
             </div>
+            <div className="Cards-info">
+                <h2>hellow</h2>
+            </div>
         </div>
     );
 };

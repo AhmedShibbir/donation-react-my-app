@@ -1,0 +1,29 @@
+.Footer_container{
+    background: rgba(20, 87, 29, 0.65);
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Footer_main_container{
+    color: white;
+    background: rgba(20,87,29,.65);
+}
+.Footer_Links a{
+    text-decoration: none;
+    color: White;
+    padding: 3px 10px;
+    background: rgba(20,87,29,.90);
+    border: 1px solid white;
+    margin: 0px 10px;
+    border-radius: 4px;
+}
+.Footer_Links a:hover{
+    color:rgba(20, 87, 29, 0.65);
+    background: white;
+    border: 1px solid rgba(20, 87, 29, 0.95);
+}
+.footer-copyright{
+    font-weight: bold;
+}
