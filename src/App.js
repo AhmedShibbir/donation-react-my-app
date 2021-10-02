@@ -11,7 +11,7 @@ function App() {
     fetch("./MOCK_DATA.json")
     .then(res => res.json())
     .then(data => setDonations(data))
-  },[])
+  },[]);
   return (
     <div className="App">
      <Header Donations={Donations}></Header>

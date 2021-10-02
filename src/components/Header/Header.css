@@ -9,13 +9,12 @@
     width: 50%;
     background: #f2f5f141;
     margin: 20px auto;
-    height: 100px;
-    display: flex;
-    align-items: center;
+    height: 70px;
+    display: inline-block;
+    align-items: baseline;
     justify-content: center;
     border: 2px solid black;
     border-radius: 20px;
-    box-sizing: content-box;
 }
 .Header-container{
     width: 80%;

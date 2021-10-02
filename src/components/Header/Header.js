@@ -1,7 +1,8 @@
 import React from 'react';
-import "./Header.css"
+import "./Header.css";
+import Card from '../Cards/Card';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className="Header_Main_Container">
             <div className="Header-container">
@@ -16,8 +17,10 @@ const Header = () => {
                 </nav>
             </div>
             <div className="Cards-info">
-                <h2>hellow</h2>
+                <h5>Total Data found: {props.Donations.length}</h5>
+                <h5>Buget of donation collection: $100000000</h5>
             </div>
+            {props.Donations.map(Donation => <Card singleDonation ={Donation} key = {Donation.id}></Card>)}
         </div>
     );
 };

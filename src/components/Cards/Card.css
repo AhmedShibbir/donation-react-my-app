@@ -1,0 +1,18 @@
+.cards_container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 10px;
+}
+.card_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.single-card{
+    padding: 5px;
+    margin: 10px;
+    background: rgba(63, 182, 113, 0.507);
+    color: white;
+}
+.single-card img{
+    width: 100%;
+}
