@@ -57,5 +57,12 @@ nav a:hover{
     border-right: 1px solid lightblue;
 }
 .total-summary{
-    color: white
+    color: white;
+    position: fixed;
+    right: 20px;
+    background: rgba(82, 77, 92, 0.781);
+    align-items: center;
+    padding: 25px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
 }

@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Header.css";
 import Card from '../Cards/Card';
+import CardDetail from '../CardDetail/CardDetail';
 
 const Header = (props) => {
+    const [CardSummary, setCardSummary] = useState([]);
+    const handleEventAddSummary = product => {
+        const newCardSummary = [...CardSummary, product];
+        setCardSummary(newCardSummary);
+    }
     return (
         <div className="Header_Main_Container">
             <div className="Header-container">
@@ -22,10 +28,14 @@ const Header = (props) => {
             </div>
            <div className="cards">
                 <div className="card_container">
-                    {props.Donations.map(Donation => <Card singleDonation ={Donation} key = {Donation.id}></Card>)}
+                    {props.Donations.map(Donation => <Card singleDonation ={Donation} key = {Donation.id} handleEventAddSummary={handleEventAddSummary}></Card>)}
                 </div>
                 <div className="total-summary">
-                    <h5>Total summary</h5>
+                <h5>Total Selected: {CardSummary.length}</h5>
+                    {
+                        CardSummary.map(selected => <CardDetail selected={selected} key = {selected.id}></CardDetail>)
+                    }
+                    
                 </div>
            </div>
         </div>

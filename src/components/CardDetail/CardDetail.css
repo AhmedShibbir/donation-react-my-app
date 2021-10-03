@@ -1,0 +1,14 @@
+.shortCard img{
+ width: 100px;
+}
+.shortCard{
+    display: flex;
+    border: 1px solid rgb(236, 230, 216);
+    margin: 4px 0px;
+    border-radius: 3px;
+    flex-direction: row;
+    row-gap: 5px;
+}
+.shortCard div{
+    margin: 0px 2px;
+}
