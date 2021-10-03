@@ -11,7 +11,7 @@ const CardDetail = (props) => {
                 <p> {full_name} </p>
                 <p>Donated: {donation_amount}</p>
             </div>
-            
+            {props.countTotal(donation_amount)}
         </div>
     );
 };

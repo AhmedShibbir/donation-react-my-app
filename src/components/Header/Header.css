@@ -44,7 +44,7 @@ nav a:hover{
 }
 .cards{
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding-left: 35px;
     box-shadow: 3px 3px white;
     
@@ -60,9 +60,11 @@ nav a:hover{
     color: white;
     position: fixed;
     right: 20px;
+    top: 150px;
     background: rgba(82, 77, 92, 0.781);
     align-items: center;
     padding: 25px;
     border: 1px solid lightgrey;
     border-radius: 10px;
+    width: 350px;
 }

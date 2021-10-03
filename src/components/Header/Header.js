@@ -8,6 +8,14 @@ const Header = (props) => {
     const handleEventAddSummary = product => {
         const newCardSummary = [...CardSummary, product];
         setCardSummary(newCardSummary);
+    };
+    const [Total,setTotal]=useState([0]);
+    let newTotal = 0;
+    const countTotal = amount => {
+        const dollerLess = amount.split("$");
+        const newAmount = parseFloat(dollerLess[1]);
+        newTotal+=newAmount;
+        setTotal((newTotal/2).toFixed(2));
     }
     return (
         <div className="Header_Main_Container">
@@ -24,7 +32,7 @@ const Header = (props) => {
             </div>
             <div className="Cards-info">
                 <h5>Total Data found: {props.Donations.length}</h5>
-                <h5>Buget of donation collection: $100000</h5>
+                <h5>Buget of donation collection: $35000</h5>
             </div>
            <div className="cards">
                 <div className="card_container">
@@ -33,9 +41,9 @@ const Header = (props) => {
                 <div className="total-summary">
                 <h5>Total Selected: {CardSummary.length}</h5>
                     {
-                        CardSummary.map(selected => <CardDetail selected={selected} key = {selected.id}></CardDetail>)
+                        CardSummary.map(selected => <CardDetail selected={selected} key = {selected.id} countTotal={countTotal}></CardDetail>)
                     }
-                    
+                <h5>Total Collected: {Total}</h5>
                 </div>
            </div>
         </div>
