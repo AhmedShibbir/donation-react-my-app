@@ -1,5 +1,5 @@
 .Footer_container{
-    background: rgba(20, 87, 29, 0.65);
+    background: rgba(82, 87, 83, 0.65);
     color: white;
     height: 250px;
     display: flex;
@@ -8,13 +8,13 @@
 }
 .Footer_main_container{
     color: white;
-    background: rgba(20,87,29,.65);
+    background: rgba(16, 17, 16, 0.836);
 }
 .Footer_Links a{
     text-decoration: none;
     color: White;
     padding: 3px 10px;
-    background: rgba(20,87,29,.90);
+    background: rgba(23, 49, 27, 0.9);
     border: 1px solid white;
     margin: 0px 10px;
     border-radius: 4px;

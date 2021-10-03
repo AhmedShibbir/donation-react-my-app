@@ -1,11 +1,11 @@
 .Header_Main_Container{
     width: 100%;
-    height: 1080px;
-    background-image: url("https://www.bureauveritas.com.bd/sites/g/files/zypfnx626/files/2020-11/World-Quality-Day_Main-image.jpg");
-
+    height: 100%;
+    /* background-image: url("https://www.bureauveritas.com.bd/sites/g/files/zypfnx626/files/2020-11/World-Quality-Day_Main-image.jpg"); */
+    background-color: gray;
 }
 .Cards-info{
-    color: rgb(32, 77, 18);
+    color: rgb(252, 249, 249);
     width: 50%;
     background: #f2f5f141;
     margin: 20px auto;
@@ -14,7 +14,8 @@
     align-items: baseline;
     justify-content: center;
     border: 2px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
+    text-shadow: 1px 1px rgb(61, 49, 233);
 }
 .Header-container{
     width: 80%;
@@ -40,4 +41,21 @@ nav a{
 nav a:hover{
     color:aqua;
     text-shadow: 1px 1px rgb(226, 131, 131);
+}
+.cards{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding-left: 35px;
+    box-shadow: 3px 3px white;
+    
+}
+.card_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+    padding-bottom: 25px;
+    border-right: 1px solid lightblue;
+}
+.total-summary{
+    color: white
 }

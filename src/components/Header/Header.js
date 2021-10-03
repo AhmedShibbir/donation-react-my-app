@@ -18,9 +18,16 @@ const Header = (props) => {
             </div>
             <div className="Cards-info">
                 <h5>Total Data found: {props.Donations.length}</h5>
-                <h5>Buget of donation collection: $100000000</h5>
+                <h5>Buget of donation collection: $100000</h5>
             </div>
-            {props.Donations.map(Donation => <Card singleDonation ={Donation} key = {Donation.id}></Card>)}
+           <div className="cards">
+                <div className="card_container">
+                    {props.Donations.map(Donation => <Card singleDonation ={Donation} key = {Donation.id}></Card>)}
+                </div>
+                <div className="total-summary">
+                    <h5>Total summary</h5>
+                </div>
+           </div>
         </div>
     );
 };

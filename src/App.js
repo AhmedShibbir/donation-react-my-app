@@ -16,7 +16,6 @@ function App() {
     <div className="App">
      <Header Donations={Donations}></Header>
      <Footer></Footer>
-     
     </div>
   );
 }
