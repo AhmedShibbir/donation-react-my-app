@@ -11,9 +11,9 @@ const Footer = () => {
                     <p>323/4, Level#110, Liberal villa, New York-6003521, USA</p>
                 </div>
                 <div className="Footer_Links">
-                    <a href="/Github">Github</a>
-                    <a href="/LinkedIn">LinkedIn</a>
-                    <a href="/Gmail">Gmail</a>
+                    <a href="https://github.com/AhmedShibbir">Github</a>
+                    <a href="https://www.linkedin.com/in/ahmedshibbir/">LinkedIn</a>
+                    <a href="https://www.instagram.com/ahmed_shibbir/">Instagram</a>
                 </div>
             </div>
             <div className="footer-copyright">
