@@ -15,7 +15,7 @@ const Header = (props) => {
         const dollerLess = amount.split("$");
         const newAmount = parseFloat(dollerLess[1]);
         newTotal+=newAmount;
-        setTotal((newTotal/2).toFixed(2));
+        setTotal(newTotal.toFixed(2));
     }
     return (
         <div className="Header_Main_Container">
